@@ -1,9 +1,6 @@
-import 'reflector.dart';
+import './build_main.dart';
 
 @reflector
 class B {
   String prop;
-}
-
-void main() {
 }

@@ -4,4 +4,4 @@ targets:
       reflectable:
         generate_for:
           include:
-            - lib/**.dart
+            - lib/build_main.dart

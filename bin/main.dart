@@ -1,13 +1,10 @@
-import 'package:reftest/reflector.dart';
-
-import '../lib/class_a.reflectable.dart' as a;
-import '../lib/class_b.reflectable.dart' as b;
-
+import '../lib/build_main.reflectable.dart' as reflectable_main;
+import '../lib/build_main.dart';
 
 main(List<String> arguments) {
-  a.initializeReflectable();
-  b.initializeReflectable();
+  reflectable_main.initializeReflectable();
 
+  print('length ${reflector.annotatedClasses.length}');
   reflector.annotatedClasses.forEach((cls) {
     print("Annotated class ${cls.qualifiedName}");
   });
