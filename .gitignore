@@ -12,3 +12,6 @@ doc/api/
 
 *.reflectable.dart
 idea/
+
+
+.DS_Store
